@@ -6,7 +6,7 @@ export default function Header(){
     const [query, setQuery] = useState('');
     const router = useRouter();
 
-    const handleSearch = (e) => {
+    const handleSearch = (e:React.FormEvent) => {
     e.preventDefault();
     // Redirect to search results page with query param
     if (query.trim()) {
